@@ -61,6 +61,19 @@ h2{font-family:'Rubik',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,38p
 .oz .fill{display:block;height:100%;min-width:6px;border-radius:99px;background:linear-gradient(90deg,var(--acc),var(--blik))}
 .oz .eq{grid-area:eq;color:var(--soft);font-size:14.5px;text-align:right}
 
+/* скріни MT5 */
+.lead+.lead{margin-top:12px}
+.shots{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.shots li{display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:16px}
+.shots .cap{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+.shots li>a{align-self:start}
+.shots .n{width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--line2);border-radius:999px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--acc);line-height:1}
+.shots .cap p{color:var(--soft);font-size:15px;line-height:1.6;padding-top:1px}
+.shots a{display:block;border:1px solid var(--line2);border-radius:28px;overflow:hidden;background:#03080b}
+.shots a:hover{border-color:var(--acc)}
+.shots img{width:100%;height:auto}
+.shots+.cost{margin-top:44px}
+
 /* виділені пояснення */
 .cost{border-left:2px solid var(--acc);padding:4px 0 4px 22px}
 .cost p{color:var(--soft);font-size:15.5px}
@@ -96,6 +109,7 @@ a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
   .hero{padding:56px 0 56px}
   .blk-grid{grid-template-columns:1fr;gap:28px}
   .side p{max-width:none}
+  .shots{grid-template-columns:1fr;gap:40px;max-width:340px;margin-left:auto;margin-right:auto}
 }
 @media (max-width:560px){
   .wrap{padding:0 18px}
@@ -119,8 +133,9 @@ a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
     <p>Давайте почнем з самого початку.</p>
     <nav class="toc" aria-label="Зміст">
       <a href="#lot"><i>01</i>Що таке лот?</a>
-      <a href="#rules"><i>02</i>Що не можна робити</a>
-      <a href="#risk"><i>03</i>Про ризики</a>
+      <a href="#mt5"><i>02</i>Підготовка в MetaTrader 5</a>
+      <a href="#rules"><i>03</i>Що не можна робити</a>
+      <a href="#risk"><i>04</i>Про ризики</a>
     </nav>
   </section>
 
@@ -145,10 +160,40 @@ a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
     </div>
   </section>
 
-  <section class="blk" id="rules">
+  <section class="blk" id="mt5">
     <div class="blk-grid">
       <div class="side">
         <span class="num">02</span>
+        <h2>Підготовка в MetaTrader 5</h2>
+      </div>
+      <div>
+        <p class="lead">Вам потрібно зайти на MT5 і підготуватись до відкриття угоди.</p>
+        <p class="lead">Відео — в ЛС, скріни — тут.</p>
+      </div>
+    </div>
+    <ol class="shots">
+      <li>
+        <div class="cap"><span class="n">1</span><p>Внизу відкрий вкладку «Чарт».</p></div>
+        <a href="mt5-1.jpg" target="_blank" rel="noopener"><img src="mt5-1.jpg" width="589" height="1280" loading="lazy" alt="MetaTrader 5, екран «Установки»: внизу обведено вкладку «Чарт»"></a>
+      </li>
+      <li>
+        <div class="cap"><span class="n">2</span><p>Справа вгорі натисни обведену іконку, і над графіком з'явиться панель SELL / BUY.</p></div>
+        <a href="mt5-2.jpg" target="_blank" rel="noopener"><img src="mt5-2.jpg" width="589" height="1280" loading="lazy" alt="Графік GOLD у MetaTrader 5: справа вгорі обведено іконку панелі торгівлі"></a>
+      </li>
+      <li>
+        <div class="cap"><span class="n">3</span><p>Стрілками ˅ ˄ на панелі виставляєш лот. На скріні стоїть 0.3.</p></div>
+        <a href="mt5-3.jpg" target="_blank" rel="noopener"><img src="mt5-3.jpg" width="589" height="1280" loading="lazy" alt="Панель SELL / BUY над графіком GOLD: обведено поле лота зі значенням 0.3"></a>
+      </li>
+    </ol>
+    <div class="cost">
+      <p><b>Окей, по МетаТрейдеру до відкриття угоди ми підготувались.</b></p>
+    </div>
+  </section>
+
+  <section class="blk" id="rules">
+    <div class="blk-grid">
+      <div class="side">
+        <span class="num">03</span>
         <h2>Також — що не можна робити</h2>
         <p class="alert">Ми це будемо детектити й можемо вам не виплатити кошти (250 доларів).</p>
       </div>
@@ -163,7 +208,7 @@ a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
   <section class="blk" id="risk">
     <div class="blk-grid">
       <div class="side">
-        <span class="num">03</span>
+        <span class="num">04</span>
         <h2>Про ризики</h2>
       </div>
       <div class="cost">
