@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#050505">
 <meta name="color-scheme" content="dark">
 <title>Як заходити в угоди · Zero Water</title>
 <meta name="description" content="Сигнал не винен, винен вхід. Як читати сигнал, рахувати лот, ставити стоп і беззбиток.">
@@ -19,107 +19,111 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,250..700&display=swap">
-<link rel="stylesheet" href="../assets/zw.css?v=4">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&family=JetBrains+Mono:wght@400..600&display=swap">
+<link rel="stylesheet" href="../assets/zw.css?v=5">
 <script>document.documentElement.classList.add('js')</script>
-<script src="../assets/zw.js?v=4" defer></script>
+<script src="../assets/zw.js?v=5" defer></script>
 </head>
 <body>
 <div class="prog" aria-hidden="true"><i></i></div>
-<header class="nav"><div class="wrap">
-  <a class="brand" href="../" aria-label="Zero Water, усі матеріали"><img src="../assets/can-icon.png" alt="" width="14" height="24"><b>zero water</b></a>
-  <span class="where">Крок 3 з 3</span>
-</div></header>
+<header class="nav"><div class="wrap"><div class="bar">
+  <a class="brand" href="../" aria-label="Zero Water, усі матеріали"><img src="../assets/can-icon.png" alt="" width="15" height="26"><b>zero water</b></a>
+  <span class="m">угоди<em>03</em></span>
+</div></div></header>
 <main>
-<section class="hero wrap">
-  <span class="label">Як заходити в угоди</span>
-  <h1>Сигнал не винен. Винен вхід<span class="y">.</span></h1>
-  <p class="lead">Більшість зливає не тому, що сигнал поганий. А тому, що зайшли не за тим числом, не тим лотом і без стопа. Тут розібрано, як заходити так, щоб результат залежав від сигналу, а не від того, як ти його прочитав.</p>
-  <div class="sigx"><span class="label">Приклад сигналу</span>
-  <dl class="dl"><div><dt>Сигнал</dt><dd class="big">BUY XAUUSD</dd></div><div><dt>Вхід</dt><dd>4170 до 4172</dd></div><div><dt>Тейки</dt><dd>4179.3 / 4186.9 / 4195 / 4221.2</dd></div><div><dt>Стоп</dt><dd class="sl">4155</dd></div></dl></div>
-</section>
-<section class="sec wrap">
-  <span class="n rv">01</span>
-  <h2 class="rv">Читаємо сигнал</h2>
-  <p class="rv">У кожному сигналі п'ять речей. Більше нічого вигадувати не треба.</p>
-  <dl class="dl rv"><div><dt>XAUUSD</dt><dd>інструмент. золото до долара</dd></div><div><dt>BUY</dt><dd>купуємо, працюємо на зростання. SELL це навпаки</dd></div><div><dt>Вхід</dt><dd>діапазон, у якому заходимо. не одне число, а коридор</dd></div><div><dt>TP</dt><dd>рівні, де фіксуємо прибуток. їх кілька, закриваємось частинами</dd></div><div><dt>SL</dt><dd>стоп. місце, де угода закривається в мінус і не йде далі</dd></div><div><dt>БУ</dt><dd>беззбиток. перенесення стопа на ціну входу</dd></div></dl>
-</section>
-<section class="sec wrap">
-  <span class="n rv">02</span>
-  <h2 class="rv">Відкриваємо угоду</h2>
-  <p class="rv">MetaTrader 5, чотири дії. Нічого не змінюємо від себе.</p>
-  <ol class="steps rv">
-    <li><span class="k">1</span><div><h3>Знаходимо інструмент</h3><p>Котирування, далі <b>XAUUSD</b>, далі Trade.</p></div></li>
-    <li><span class="k">2</span><div><h3>Ставимо лот</h3><p>Обсяг рахуємо під свій депозит. Як саме, у блоці 04.</p></div></li>
-    <li><span class="k">3</span><div><h3>Вписуємо Stop Loss і Take Profit</h3><p>Один в один із сигналу. <b>Не округлюємо і не рухаємо на своє око.</b></p></div></li>
-    <li><span class="k">4</span><div><h3>Натискаємо Buy by Market</h3><p>Або Sell by Market, якщо сигнал на продаж.</p></div></li>
-  </ol>
-  <div class="shots rv" style="--cols:3"><figure class="shot"><img src="img/01.jpg" width="780" height="1710" alt="01 · Котирування, далі XAUUSD, далі Trade" loading="lazy" decoding="async"><figcaption>01 · Котирування, далі XAUUSD, далі Trade</figcaption></figure><figure class="shot"><img src="img/02.jpg" width="780" height="963" alt="02 · Обсяг. Тут виставляєш лот під свій депозит" loading="lazy" decoding="async"><figcaption>02 · Обсяг. Тут виставляєш лот під свій депозит</figcaption></figure><figure class="shot"><img src="img/03.jpg" width="780" height="1709" alt="03 · Stop Loss і Take Profit вписуєш цифрами з сигналу" loading="lazy" decoding="async"><figcaption>03 · Stop Loss і Take Profit вписуєш цифрами з сигналу</figcaption></figure></div>
-  <div class="aside rv"><span class="label">Примітка</span><p>Цифри на скрінах з іншої угоди. Вони тут тільки щоб показати, де що стоїть. Свої бери тільки з сигналу.</p></div>
-</section>
-<section class="sec wrap">
-  <span class="n rv">03</span>
-  <h2 class="rv">Закриваємо позицію</h2>
-  <p class="rv">Угода закривається сама по TP або по SL. Вручну закриваємо, коли треба вийти раніше.</p>
-  <ol class="steps rv">
-    <li><span class="k">1</span><div><h3>Close position</h3><p>Trade, потім Close position. Угода закривається повністю за поточною ціною.</p></div></li>
-    <li><span class="k">2</span><div><h3>Modify position</h3><p>Тут міняємо SL і TP уже у відкритій угоді. Це ж вікно потрібне для беззбитку.</p></div></li>
-  </ol>
-  <div class="shots rv" style="--cols:2"><figure class="shot"><img src="img/04.jpg" width="780" height="1699" alt="04 · Close position. Закриває угоду повністю за поточною ціною" loading="lazy" decoding="async"><figcaption>04 · Close position. Закриває угоду повністю за поточною ціною</figcaption></figure><figure class="shot"><img src="img/05.jpg" width="780" height="1032" alt="05 · Помаранчева кнопка знизу одразу показує, з яким результатом закриється угода" loading="lazy" decoding="async"><figcaption>05 · Помаранчева кнопка знизу одразу показує, з яким результатом закриється угода</figcaption></figure></div>
-</section>
-<section class="sec wrap">
-  <span class="n rv">04</span>
-  <h2 class="rv">Розмір лота</h2>
-  <p class="rv">Це головне місце, де люди зливають. Не сигнал, а обсяг.</p>
-  <table class="tbl rv"><thead><tr><th>Депозит</th><th>Максимальний лот</th></tr></thead><tbody>
-    <tr><td>до $300</td><td>0.01</td></tr><tr><td>$300 до $400</td><td>0.02</td></tr><tr><td>$400 до $600</td><td>0.03</td></tr>
-    <tr><td>$600 до $800</td><td>0.04 до 0.05</td></tr><tr><td>$900 до $1000</td><td>0.06</td></tr><tr><td>$10 000</td><td>0.1</td></tr>
-    <tr><td>$15 000</td><td>0.15</td></tr><tr><td>$20 000</td><td>0.3</td></tr><tr><td>$30 000</td><td>0.7</td></tr>
-  </tbody></table>
-  <div class="aside rv"><span class="label hot">Важливо</span><p>Це стеля, а не рекомендація. Лот рахується під конкретний стоп, а не під депозит взагалі.</p><p>Contract size для золота <b>100</b>, для валютних пар <b>100 000</b>.</p></div>
-  <p class="rv" style="margin-top:28px"><a class="btn line" href="https://www.fxverify.com/ua/tools/position-size-calculator" target="_blank" rel="noopener">Калькулятор лота <i>↗</i></a></p>
-  <div class="shots rv one"><figure class="shot"><img src="img/06.jpg" width="780" height="1609" alt="06 · Калькулятор. Ціна стопа, депозит, ризик у відсотках і contract size" loading="lazy" decoding="async"><figcaption>06 · Калькулятор. Ціна стопа, депозит, ризик у відсотках і contract size</figcaption></figure></div>
-  <figure class="vid rv"><video controls playsinline preload="none" poster="img/lot-poster.jpg" width="720" height="1332"><source src="lot.mp4" type="video/mp4">Твій браузер не тягне це відео. Онови його або відкрий сторінку в іншому.</video><figcaption>07 · Рахуємо лот під конкретний стоп і виставляємо ордер. 1:39</figcaption></figure>
-</section>
-<section class="sec wrap">
-  <span class="n rv">05</span>
-  <h2 class="rv">Беззбиток</h2>
-  <p class="rv">Коли ціна пішла в твій бік і взяла перший тейк, стоп переноситься на ціну входу. Після цього угода вже не може закритись у мінус.</p>
-  <ol class="steps rv">
-    <li><span class="k">1</span><div><h3>Modify position</h3><p>Відкриваєш угоду і йдеш у зміну параметрів.</p></div></li>
-    <li><span class="k">2</span><div><h3>Ставиш SL на ціну входу</h3><p>Зайшов на 4732, стоп стояв на 4730. Ціна пішла вгору, перший тейк узятий. Переставляєш SL на <b>4732</b> і тиснеш Modify. Тепер гірше нуля не буде.</p></div></li>
-  </ol>
-  <div class="shots rv" style="--cols:2"><figure class="shot"><img src="img/08.jpg" width="780" height="1687" alt="08 · Modify position. Звідси міняєш SL і TP у вже відкритій угоді" loading="lazy" decoding="async"><figcaption>08 · Modify position. Звідси міняєш SL і TP у вже відкритій угоді</figcaption></figure><figure class="shot"><img src="img/09.jpg" width="780" height="1704" alt="09 · Ставиш Stop Loss на ціну входу і тиснеш Modify" loading="lazy" decoding="async"><figcaption>09 · Ставиш Stop Loss на ціну входу і тиснеш Modify</figcaption></figure></div>
-</section>
-<section class="sec wrap">
-  <span class="n rv">06</span>
-  <h2 class="rv">Скільки ризикувати</h2>
-  <p class="rv">Ризик рахується від депозиту на одну угоду. Не від настрою і не від того, наскільки впевнений у сигналі.</p>
-  <ul class="risk rv">
-    <li><i style="--c:var(--green)"></i><b>1 до 2%</b><span>спокійно, так працюють довго</span></li>
-    <li><i style="--c:var(--y)"></i><b>2 до 5%</b><span>робочий діапазон</span></li>
-    <li><i style="--c:var(--orange)"></i><b>5 до 10%</b><span>вже небезпечно</span></li>
-    <li><i style="--c:var(--red)"></i><b>10% і вище</b><span>це вже не торгівля</span></li>
-  </ul>
-  <p class="quote rv">Стоп ставиться завжди. Без винятків і без "цього разу точно піде".</p>
-</section>
-<section class="sec wrap">
-  <span class="n rv">07</span>
-  <h2 class="rv">Якщо пропустив вхід</h2>
-  <p class="rv">Ціна вже пройшла більше двох, трьох доларів від точки входу? Сигнал пропускаємо. Наступний буде.</p>
-  <p class="quote rv">Пропущений сигнал це не втрата. Втрата це коли стрибаєш у вагон на ходу і виходиш у мінус.</p>
-</section>
-<section class="end wrap">
-  <h2 class="rv">Питання лишились?</h2>
-  <p class="rv">Сигнали лежать у закритому каналі. Якщо щось не зійшлося або не виходить виставити угоду, пиши менеджеру, розберемо.</p>
-  <a class="btn rv" href="https://t.me/managvalik" target="_blank" rel="noopener">Написати менеджеру <i>→</i></a>
-  <span class="handle">@managvalik</span>
-  <ul class="rows plain next rv"><li><a href="../"><span><span class="label">Усі матеріали</span><b>Повернутись до інструкцій</b></span><span class="go">→</span></a></li></ul>
-</section>
+<section class="hero" data-tip="Сигнал нормальний? Тоді вся гра у вході. Йди по блоках зверху вниз."><div class="wrap">
+  <div class="micro m fx"><span class="cross" aria-hidden="true"></span><span class="hot">ZW—03</span><span>як заходити в угоди</span><span>для новачків</span></div>
+  <h1><span class="ln"><span>Сигнал не винен.</span></span><span class="ln"><span>Винен вхід<span class="y">.</span></span></span></h1>
+  <p class="lead fx">Більшість зливає не тому, що сигнал поганий. А тому, що зайшли не за тим числом, не тим лотом і без стопа. Тут розібрано, як заходити так, щоб результат залежав від сигналу, а не від того, як ти його прочитав.</p>
+  <div class="card sig fx"><div class="card-h m"><span>приклад сигналу</span><b>BUY XAUUSD</b></div>
+    <div class="rows"><div><span class="m">Вхід</span><span class="v">4170 до 4172</span></div>
+    <div><span class="m">Тейки</span><span class="tps"><span>4179.3</span><span>4186.9</span><span>4195</span><span>4221.2</span></span></div>
+    <div><span class="m">Стоп</span><span class="v sl">4155</span></div></div></div>
+</div></section>
+
+<section class="sec" data-tip="У сигналі п’ять речей: інструмент, напрям, вхід, TP і SL. Більше нічого."><div class="wrap split">
+  <div class="sec-h rv"><div class="sh-row m"><b>01</b><span>сигнал</span></div><h2>Читаємо сигнал</h2><p>У кожному сигналі п'ять речей. Більше нічого вигадувати не треба.</p></div>
+  <div class="sec-b">
+    <div class="card params rv"><div class="row"><span class="m">XAUUSD</span><span>інструмент. золото до долара</span></div><div class="row"><span class="m">BUY</span><span>купуємо, працюємо на зростання. SELL це навпаки</span></div><div class="row"><span class="m">Вхід</span><span>діапазон, у якому заходимо. не одне число, а коридор</span></div><div class="row"><span class="m">TP</span><span>рівні, де фіксуємо прибуток. їх кілька, закриваємось частинами</span></div><div class="row"><span class="m">SL</span><span>стоп. місце, де угода закривається в мінус і не йде далі</span></div><div class="row"><span class="m">БУ</span><span>беззбиток. перенесення стопа на ціну входу</span></div></div>
+  </div>
+</div></section>
+<section class="sec" data-tip="SL і TP переписуй з сигналу один в один. Не округлюй."><div class="wrap split">
+  <div class="sec-h rv"><div class="sh-row m"><b>02</b><span>вхід</span></div><h2>Відкриваємо угоду</h2><p>MetaTrader 5, чотири дії. Нічого не змінюємо від себе.</p></div>
+  <div class="sec-b">
+    <div class="card rv"><ol class="steps">
+        <li><span class="k">01</span><div><h3>Знаходимо інструмент</h3><p>Котирування, далі <b>XAUUSD</b>, далі Trade.</p></div></li>
+        <li><span class="k">02</span><div><h3>Ставимо лот</h3><p>Обсяг рахуємо під свій депозит. Як саме, у блоці 04.</p></div></li>
+        <li><span class="k">03</span><div><h3>Вписуємо Stop Loss і Take Profit</h3><p>Один в один із сигналу. <b>Не округлюємо і не рухаємо на своє око.</b></p></div></li>
+        <li><span class="k">04</span><div><h3>Натискаємо Buy by Market</h3><p>Або Sell by Market, якщо сигнал на продаж.</p></div></li>
+    </ol></div>
+    <div class="shots rv" style="--cols:3"><figure class="shot"><img src="img/01.jpg" width="780" height="1710" alt="Котирування, далі XAUUSD, далі Trade" loading="lazy" decoding="async"><figcaption><span class="m">IMG—01</span><span>Котирування, далі XAUUSD, далі Trade</span></figcaption></figure><figure class="shot"><img src="img/02.jpg" width="780" height="963" alt="Обсяг. Тут виставляєш лот під свій депозит" loading="lazy" decoding="async"><figcaption><span class="m">IMG—02</span><span>Обсяг. Тут виставляєш лот під свій депозит</span></figcaption></figure><figure class="shot"><img src="img/03.jpg" width="780" height="1709" alt="Stop Loss і Take Profit вписуєш цифрами з сигналу" loading="lazy" decoding="async"><figcaption><span class="m">IMG—03</span><span>Stop Loss і Take Profit вписуєш цифрами з сигналу</span></figcaption></figure></div>
+    <div class="track" aria-hidden="true"><i></i></div>
+    <div class="note rv"><span class="m">Примітка</span><p>Цифри на скрінах з іншої угоди. Вони тут тільки щоб показати, де що стоїть. Свої бери тільки з сигналу.</p></div>
+  </div>
+</div></section>
+<section class="sec" data-tip="Вийти раніше: Close position. Змінити SL або TP: Modify position."><div class="wrap split">
+  <div class="sec-h rv"><div class="sh-row m"><b>03</b><span>вихід</span></div><h2>Закриваємо позицію</h2><p>Угода закривається сама по TP або по SL. Вручну закриваємо, коли треба вийти раніше.</p></div>
+  <div class="sec-b">
+    <div class="card rv"><ol class="steps">
+        <li><span class="k">01</span><div><h3>Close position</h3><p>Trade, потім Close position. Угода закривається повністю за поточною ціною.</p></div></li>
+        <li><span class="k">02</span><div><h3>Modify position</h3><p>Тут міняємо SL і TP уже у відкритій угоді. Це ж вікно потрібне для беззбитку.</p></div></li>
+    </ol></div>
+    <div class="shots rv" style="--cols:2"><figure class="shot"><img src="img/04.jpg" width="780" height="1699" alt="Close position. Закриває угоду повністю за поточною ціною" loading="lazy" decoding="async"><figcaption><span class="m">IMG—04</span><span>Close position. Закриває угоду повністю за поточною ціною</span></figcaption></figure><figure class="shot"><img src="img/05.jpg" width="780" height="1032" alt="Помаранчева кнопка знизу одразу показує, з яким результатом закриється угода" loading="lazy" decoding="async"><figcaption><span class="m">IMG—05</span><span>Помаранчева кнопка знизу одразу показує, з яким результатом закриється угода</span></figcaption></figure></div>
+    <div class="track" aria-hidden="true"><i></i></div>
+  </div>
+</div></section>
+<section class="sec" data-tip="Лот: головне місце, де зливають. Рахуй його під стоп у калькуляторі."><div class="wrap split">
+  <div class="sec-h rv"><div class="sh-row m"><b>04</b><span>лот</span></div><h2>Розмір лота</h2><p>Це головне місце, де люди зливають. Не сигнал, а обсяг.</p></div>
+  <div class="sec-b">
+    <div class="card rv"><table class="tbl"><thead><tr><th class="m">Депозит</th><th class="m">Максимальний лот</th></tr></thead><tbody>
+      <tr><td>до $300</td><td>0.01</td></tr><tr><td>$300 до $400</td><td>0.02</td></tr><tr><td>$400 до $600</td><td>0.03</td></tr>
+      <tr><td>$600 до $800</td><td>0.04 до 0.05</td></tr><tr><td>$900 до $1000</td><td>0.06</td></tr><tr><td>$10 000</td><td>0.1</td></tr>
+      <tr><td>$15 000</td><td>0.15</td></tr><tr><td>$20 000</td><td>0.3</td></tr><tr><td>$30 000</td><td>0.7</td></tr>
+    </tbody></table></div>
+    <div class="note rv hot"><span class="m">Важливо</span><p>Це стеля, а не рекомендація. Лот рахується під конкретний стоп, а не під депозит взагалі.</p><p>Contract size для золота <b>100</b>, для валютних пар <b>100 000</b>.</p></div>
+    <p class="rv" style="margin-top:16px"><a class="btn ghost" href="https://www.fxverify.com/ua/tools/position-size-calculator" target="_blank" rel="noopener">Калькулятор лота <span class="ar">↗</span></a></p>
+    <div class="shots rv one"><figure class="shot"><img src="img/06.jpg" width="780" height="1609" alt="Калькулятор. Ціна стопа, депозит, ризик у відсотках і contract size" loading="lazy" decoding="async"><figcaption><span class="m">IMG—06</span><span>Калькулятор. Ціна стопа, депозит, ризик у відсотках і contract size</span></figcaption></figure></div>
+    <figure class="card vid rv"><div class="card-h m"><span>▶ відео</span><span>1:39</span></div><div class="in"><video controls playsinline preload="none" poster="img/lot-poster.jpg" width="720" height="1332"><source src="lot.mp4" type="video/mp4">Твій браузер не тягне це відео. Онови його або відкрий сторінку в іншому.</video><figcaption style="padding:12px 4px 2px;font-size:13.5px;color:var(--soft)">Рахуємо лот під конкретний стоп і виставляємо ордер.</figcaption></div></figure>
+  </div>
+</div></section>
+<section class="sec" data-tip="Взяв перший тейк: переставляй стоп на вхід. Мінуса вже не буде."><div class="wrap split">
+  <div class="sec-h rv"><div class="sh-row m"><b>05</b><span>беззбиток</span></div><h2>Беззбиток</h2><p>Коли ціна пішла в твій бік і взяла перший тейк, стоп переноситься на ціну входу. Після цього угода вже не може закритись у мінус.</p></div>
+  <div class="sec-b">
+    <div class="card rv"><ol class="steps">
+        <li><span class="k">01</span><div><h3>Modify position</h3><p>Відкриваєш угоду і йдеш у зміну параметрів.</p></div></li>
+        <li><span class="k">02</span><div><h3>Ставиш SL на ціну входу</h3><p>Зайшов на 4732, стоп стояв на 4730. Ціна пішла вгору, перший тейк узятий. Переставляєш SL на <b>4732</b> і тиснеш Modify. Тепер гірше нуля не буде.</p></div></li>
+    </ol></div>
+    <div class="shots rv" style="--cols:2"><figure class="shot"><img src="img/08.jpg" width="780" height="1687" alt="Modify position. Звідси міняєш SL і TP у вже відкритій угоді" loading="lazy" decoding="async"><figcaption><span class="m">IMG—08</span><span>Modify position. Звідси міняєш SL і TP у вже відкритій угоді</span></figcaption></figure><figure class="shot"><img src="img/09.jpg" width="780" height="1704" alt="Ставиш Stop Loss на ціну входу і тиснеш Modify" loading="lazy" decoding="async"><figcaption><span class="m">IMG—09</span><span>Ставиш Stop Loss на ціну входу і тиснеш Modify</span></figcaption></figure></div>
+    <div class="track" aria-hidden="true"><i></i></div>
+  </div>
+</div></section>
+<section class="sec" data-tip="Ризик 1–5% на угоду. Без стопа не заходь узагалі."><div class="wrap split">
+  <div class="sec-h rv"><div class="sh-row m"><b>06</b><span>ризик</span></div><h2>Скільки ризикувати</h2><p>Ризик рахується від депозиту на одну угоду. Не від настрою і не від того, наскільки впевнений у сигналі.</p></div>
+  <div class="sec-b">
+    <div class="meter rv" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="risk rv"><div class="fact"><span class="m">ризик</span><div><b class="up">1–2%</b><span class="c">спокійно, так працюють довго</span></div></div><div class="fact"><span class="m">ризик</span><div><b class="y">2–5%</b><span class="c">робочий діапазон</span></div></div><div class="fact"><span class="m">ризик</span><div><b style="color:var(--orange)">5–10%</b><span class="c">вже небезпечно</span></div></div><div class="fact"><span class="m">ризик</span><div><b class="down">10%+</b><span class="c">це вже не торгівля</span></div></div></div>
+    <p class="quote rv">Стоп ставиться завжди. <span class="y">Без винятків і без "цього разу точно піде".</span></p>
+  </div>
+</div></section>
+<section class="sec" data-tip="Ціна втекла на 2–3 долари від входу? Пропускай, наступний сигнал буде."><div class="wrap split">
+  <div class="sec-h rv"><div class="sh-row m"><b>07</b><span>пропуск</span></div><h2>Якщо пропустив вхід</h2><p>Ціна вже пройшла більше двох, трьох доларів від точки входу? Сигнал пропускаємо. Наступний буде.</p></div>
+  <div class="sec-b">
+    <p class="quote rv" style="margin-top:0">Пропущений сигнал це не втрата. <span class="y">Втрата це коли стрибаєш у вагон на ходу і виходиш у мінус.</span></p>
+  </div>
+</div></section>
+<section class="end" data-tip="Щось не так з угодою: пиши менеджеру, розберемо."><div class="wrap"><div class="end-g">
+  <div class="card cta rv"><div class="sh-row m"><b>?</b><span>допомога</span></div><h2>Питання лишились?</h2><p>Сигнали лежать у закритому каналі. Якщо щось не зійшлося або не виходить виставити угоду, пиши менеджеру, розберемо.</p>
+    <a class="btn" href="https://t.me/managvalik" target="_blank" rel="noopener">Написати менеджеру <span class="ar">→</span></a><span class="handle">@managvalik</span></div>
+  <a class="tile rv" style="--d:1" href="../"><div class="top m"><span>усі матеріали</span><span class="ar">→</span></div><em class="big" aria-hidden="true">00</em><b>Повернутись до інструкцій</b><span class="d">Термінал, активація, угоди і промка.</span></a>
+</div></div></section>
 </main>
 <footer class="foot"><div class="wrap">
-  <a class="brand" href="../"><img src="../assets/can-icon.png" alt="" width="12" height="20"><b>zero water</b></a>
-  <small>Торгівля пов'язана з ризиком.</small>
+  <span class="word" aria-hidden="true">zero water<i>.</i></span>
+  <div class="row m"><a class="brand" href="../"><img src="../assets/can-icon.png" alt="" width="12" height="20"><b>zero water</b></a><span>Торгівля пов'язана з ризиком</span></div>
 </div></footer>
+<div class="zg" role="status" aria-live="polite">
+  <div class="zg-b"><span class="m">банка підказує</span><p class="zg-t">Сигнал нормальний? Тоді вся гра у вході. Йди по блоках зверху вниз.</p></div>
+  <button class="zg-c" type="button" aria-label="Сховати підказку"><img src="../assets/can-sm.webp" width="115" height="192" alt=""><i></i></button>
+</div>
 </body>
 </html>
